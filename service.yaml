@@ -7,7 +7,7 @@ spec:
   selector:
     app: abc-deploy
   port:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
+  - protocol: TCP
+    port: 80
+    targetPort: 8080
   type: NodePort

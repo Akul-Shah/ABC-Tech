@@ -4,16 +4,16 @@ kind: Deployment
 metadata:
   name: abc-tech-deployment
 spec:
- replicas: 3
- selector:
+  replicas: 3
+  selector:
     matchLables:
       app: abc-tech
- template:
+  template:
     metadata:
       labels:
         app: abc-tech
-    spec:
-      containers:
+  spec:
+    containers:
       - name: abc-tech
         image: akulshah/abc-tech:latest
         port:

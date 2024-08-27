@@ -3,18 +3,20 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: abc-tech-deployment
+  labels:
+    app: abc-tech
 spec:
   replicas: 3
   selector:
-    matchLables:
+    matchLabels:
       app: abc-tech
   template:
     metadata:
       labels:
         app: abc-tech
-  spec:
-    containers:
+    spec:
+      containers:
       - name: abc-tech
         image: akulshah/abc-tech:latest
-        port:
-        - containerPort: 3100
+        ports:
+        - containerPort: 80

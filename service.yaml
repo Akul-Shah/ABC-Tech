@@ -6,8 +6,8 @@ metadata:
 spec:
   selector:
     app: abc-deploy
-  port:
-  - protocol: TCP
-    port: 80
-    targetPort: 8080
-  type: NodePort
+port:
+ - protocol: TCP
+   port: 80
+   targetPort: 8080
+type: NodePort

@@ -17,4 +17,4 @@ spec:
         - name: abc-app
           image: akulshah/abc-tech:latest
           port:
-            - containerPort: 8080
+            - containerPort: 6000

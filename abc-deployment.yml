@@ -17,4 +17,4 @@ spec:
       - name: abc-tech
         image: akulshah/abc-tech:latest
         port:
-        - containerPort: 6000
+        - containerPort: 3100

@@ -5,9 +5,9 @@ metadata:
   name: abc-nodeport-svc
 spec:
   selector:
-    app: abc-deploy
-port:
- - protocol: TCP
-   port: 80
-   targetPort: 8080
-type: NodePort
+    app.kubernetes.io/name: abc-tech
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3100
+  type: NodePort

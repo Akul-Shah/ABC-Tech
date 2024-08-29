@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: abc-tech
-        image: akulshah/abc-tech:74
+        image: akulshah/abc-tech:latest
         ports:
         - containerPort: 6000
